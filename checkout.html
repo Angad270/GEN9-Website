@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - GEN9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00050b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .search-container {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        .search-container input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        .search-container button {
+            padding: 5px 10px;
+            background-color: #f3f3f3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .checkout-container {
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .checkout-container h2 {
+            margin-top: 0;
+        }
+        .checkout-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkout-container label {
+            margin: 10px 0 5px;
+        }
+        .checkout-container input[type="text"],
+        .checkout-container input[type="email"],
+        .checkout-container input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .checkout-container button {
+            padding: 10px;
+            background-color: #00050b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Navigation Bar -->
+<header>
+    <img src="images/logo.png" alt="logo" width="100px" class="logo">
+    <h1>GEN9</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+</header>
+<!-- Checkout Section -->
+<section class="checkout-container">
+    <h2>Checkout</h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" name="card-number" required>
+        
+        <label for="expiry-date">Expiry Date</label>
+        <input type="text" id="expiry-date" name="expiry-date" required>
+        
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" name="cvv" required>
+        
+        <button type="submit">Place Order</button>
+    </form>
+</section>
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 GEN9. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

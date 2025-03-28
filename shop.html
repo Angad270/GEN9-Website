@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - GEN9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00050b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .shop-section {
+            padding: 40px 20px;
+        }
+        .shop-section h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #222222;
+            border: 1px solid #333333;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            width: calc(25% - 20px);
+            padding: 20px;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 10px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .product-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: white;
+        }
+        .product-card p {
+            font-size: 16px;
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+        .product-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ff00;
+            margin-bottom: 5px;
+        }
+        .product-card .sales {
+            font-size: 14px;
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+        .product-card button {
+            padding: 10px;
+            background-color: #00050b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="sale-banner">
+            <p>RAMADAN SALE - Up to 50% OFF on Selected Items!</p>
+        </div>
+        <img src="images/logo.png" alt="logo" width="100px" class="logo">
+        <h1>GEN9</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <h2>Shop Electronics</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <a href="ps5.html">
+                <img src="images/ps5.jpg" alt="PlayStation 5">
+            </a>
+                <h3>PlayStation 5</h3>
+                <p>Next-gen gaming console.</p>
+                <p class="price">$499</p>
+                <p class="sales">10% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="xbox.html">
+                    <img src="images/xbox.jpg" alt="Xbox Series X">
+                </a>
+                <h3>Xbox Series X</h3>
+                <p>Power your dreams.</p>
+                <p class="price">$499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="iphone.html">
+                <img src="images/iphone.jpg" alt="iPhone 14 Pro">
+            </a>
+                <h3>iPhone 14 Pro</h3>
+                <p>Dynamic Island. Always-On Display.</p>
+                <p class="price">$1,099</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="macbook.html">
+                <img src="images/macbook.jpg" alt="MacBook Pro">
+            </a>
+                <h3>MacBook Pro</h3>
+                <p>Powerful performance for professionals.</p>
+                <p class="price">$2,499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="switch.html">
+                <img src="images/switch.jpg" alt="Nintendo Switch">
+            </a>
+                <h3>Nintendo Switch</h3>
+                <p>Play anywhere, anytime.</p>
+                <p class="price">$299</p>
+                <p class="sales">40% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="alienware.html">
+                <img src="images/alienware.jpg" alt="Alienware Gaming Laptop">
+            </a>
+                <h3>Dell Alienware x16</h3>
+                <p>Unleash the gamer in you.</p>
+                <p class="price">$1,999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="samsung-tv.html">
+                <img src="images/samsung-tv.jpg" alt="Samsung 4K TV">
+            </a>
+                <h3>Samsung Smart TV</h3>
+                <p>Crystal-clear picture quality.</p>
+                <p class="price">$1,299</p>
+                <p class="sales">50% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="airpods.html">
+                <img src="images/airpods.jpg" alt="Apple AirPods Pro">
+            </a>
+                <h3>Apple AirPods Pro</h3>
+                <p>Immersive sound experience.</p>
+                <p class="price">$249</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="razer-mouse.html">
+                <img src="images/razer-mouse.jpg" alt="Razer Gaming Mouse">
+            </a>
+                <h3>Razer Z1 Gaming Mouse</h3>
+                <p>Precision and speed for gamers.</p>
+                <p class="price">$79</p>
+                <p class="sales">25% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="fitbit.html">
+                <img src="images/fitbit.jpg" alt="Fitbit Charge 5">
+            </a>
+                <h3>Fitbit Charge 5</h3>
+                <p>Track your fitness goals.</p>
+                <p class="price">$149</p>
+                <p class="sales">37% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="dell-monitor.html">
+                <img src="images/dell-monitor.jpg" alt="Dell UltraSharp Monitor">
+            </a>
+                <h3>Dell UltraSharp Monitor</h3>
+                <p>Stunning visuals for work and play.</p>
+                <p class="price">$499</p>
+                <p class="sales">12% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="logitech-keyboard.html">
+                <img src="images/logitech-keyboard.jpg" alt="Logitech Mechanical Keyboard">
+            </a>
+                <h3>Logitech G7 keyboard</h3>
+                <p>Comfortable and durable typing.</p>
+                <p class="price">$129</p>
+                <p class="sales">5% off</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GEN9. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
